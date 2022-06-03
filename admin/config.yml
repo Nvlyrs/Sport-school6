@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: GitHub
+  repo:  "Nvlyrs / Sport-school6" 
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: 'assets/uploads'
