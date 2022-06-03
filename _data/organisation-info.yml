@@ -1,0 +1,133 @@
+- id: 1
+  header: Основные сведения
+  anchor: "general"
+  paragraphs: 
+    - paragraph:
+      id: 1
+      text: ""
+      linkName: ""
+      link: ""
+  list: 
+    - listItem:
+      id: 1
+      name: ""
+      file: ""
+  img: ""
+
+- id: 2
+  header: Образовательные стандарты
+  anchor: "standarts"
+  paragraphs: 
+    - paragraph:
+      id: 1
+      text: "В МБУ СШ № 6 разработаны предпрофессиональные программы по спортивной гимнастике, спортивной акробатике, художественной гимнастике."
+      linkName: ""
+      link: ""
+    - paragraph:
+      id: 2
+      text: "Дополнительные общеобразовательные предпрофесситнальные программы разработаны на основе Федеральных государственных требований к минимуму содержания, структуре, условиям реализации дополнительных предпрофессиональных программ в области физической культуры и спорта и к срокам обучения по этим программам (Приказ Минспорта России от 12.09.2013 г. № 730), с учетом Федеральных стандартов спортивной подготовки по видам спорта. "
+      linkName: ""
+      link: ""
+    - paragraph:
+      id: 3
+      text: "Приказ Министерства спорта РФ от 30 августа 2013 г. № 691"
+      linkName: "Об утверждении Федерального стандарта спортивной подготовки по виду спорта спортивная гимнастика."
+      link: "http://www.garant.ru/products/ipo/prime/doc/70369752/"
+    - paragraph:
+      id: 3
+      text: "Приказ Министерства спорта РФ от 30 декабря 2014 г. 1105"
+      linkName: "Об утверждении Федерального стандарта спортивной подготовки по виду спорта спортивная акробатика."
+      link: "http://www.garant.ru/products/ipo/prime/doc/70369752/"
+    - paragraph:
+      id: 3
+      text: "Приказ Министерства спорта РФ от 05 февраля 2013 г. № 40"
+      linkName: "Об утверждении Федерального стандарта спортивной подготовки по виду спорта художественная гимнастика."
+      link: "http://www.garant.ru/products/ipo/prime/doc/70369752/"
+  list: 
+    - listItem:
+      id: 1
+      name: ""
+      file: ""
+  img: ""
+  
+- id: 3
+  header: Финансово-хозяйственная деятельность
+  anchor: "activity"
+  paragraphs: 
+    - paragraph:
+      id: 1
+      text: ""
+      link: ""
+  list: 
+    - listItem:
+      id: 1
+      name: ""
+      fileName: "План ФХД от 01.01.2017 г."
+      file: "/"
+    - listItem:
+      id: 2
+      name: ""
+      fileName: "План ФХД от 26.01.2017 г. "
+      file: "/"
+    - listItem:
+      id: 3
+      name: ""
+      fileName: "План ФХД от 30 марта 2017 г."
+      file: "/"
+    - listItem:
+      id: 4
+      name: ""
+      fileName: "План ФХД от 12.04.17"
+      file: "/"
+    - listItem:
+      id: 5
+      name: ""
+      fileName: "План ФХД от 19.04.2017"
+      file: "/"
+    - listItem:
+      id: 6
+      name: ""
+      fileName: "План ФХД от 18.05.2017"
+      file: "/"
+    - listItem:
+      id: 7
+      name: ""
+      fileName: "ПФХД от 29.12.2017 г."
+      file: "/"
+    - listItem:
+      id: 8
+      name: ""
+      fileName: "План ФХД от 13.02.2020"
+      file: "/"
+    - listItem:
+      id: 9
+      name: ""
+      fileName: "План ФХД 30.12.2019"
+      file: "/"
+    - listItem:
+      id: 10
+      name: ""
+      fileName: "План ФХД от 06.03.2020"
+      file: "/"
+    - listItem:
+      id: 11
+      name: ""
+      fileName: "План ХД от 30.12.2020 г."
+      file: "/"
+  img: "../assets/img/kinds-of-sports/kind-of-sport-image-id1.jpg"
+
+- id: 4
+  header: Стипендии и иные виды материальной поддержки
+  anchor: "stip"
+  paragraphs: 
+    - paragraph:
+      id: 1
+      text: "Выплаты стипендий и другие виды материальной поддержки обучающихся МУ ДЮСШ № 6 не предусмотренны. МУ ДЮСШ № 6 не имеет общежития, интерната для иногородних обучающихся, трудоустройство выпускников не предусмотрено."
+      link: ""
+  list: 
+    - listItem:
+      id: 1
+      name: ""
+      fileName: ""
+      file: ""
+  img: "../assets/img/kinds-of-sports/kind-of-sport-image-id1.jpg"
