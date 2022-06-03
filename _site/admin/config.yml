@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: 'assets/uploads'
+
+collections:
+  - name: 'website-settings'
+    label: 'Настройки'
+    files:
+      - label: "Добавить новость"
+        name: "site"
+        file: "_data/news.yml"
+        fields:
+          - label: "Заголовок новости"
+            name: "header"
+            widget: "string"
+          - label: "Описание новости"
+            name: "disc"
+            widget: "string"
+          - label: "Картинка"
+            name: "img"
+            widget: "image"
