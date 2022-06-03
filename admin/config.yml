@@ -9,15 +9,17 @@ collections:
     label: 'Настройки'
     files:
       - label: "Добавить новость"
-        name: "site"
+        name: "news"
         file: "_data/news.yml"
         fields:
-          - label: "Заголовок новости"
-            name: "header"
-            widget: "string"
-          - label: "Описание новости"
-            name: "disc"
-            widget: "string"
-          - label: "Картинка"
-            name: "img"
-            widget: "image"
+          - label: "Новости"
+            name: "news"
+            allow_add: true
+            add_to_top: true
+            max: 4
+            min: 1
+            widget: "list"
+            fields:
+              - {label: "Заголовок новости", name: "header", widget: "string"}
+              - {label: "Описание", name: "disc", widget: "text"}
+              - {label: "Картинка", name: "img", widget: "image"}
