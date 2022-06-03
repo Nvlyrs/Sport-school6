@@ -37,7 +37,7 @@ content: materials-content
                 <h2 class="news-section__title default-section-title">Новости</h2>
                 <div class="swiper-news">
                     <div class="swiper-wrapper">
-                        {% for item in site.data.news %}
+                        {% for item in site.data.news.news %}
                         <div class="news-card flex row swiper-slide">
                             <div class="news-card__image">
                                 <img src="{{item.img}}" alt="" class="imgb">
