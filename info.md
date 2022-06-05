@@ -8,7 +8,7 @@ title: Сведения об организации
                     <h2 class="info-section__title default-section-title">Сведения об организации</h2>
                     <h3 class="info-section__card-title default-card-title">Нвигация по страцие</h3>
                     <ul class="info-section__navbar">
-                        {% for item in site.data.organisation-info%}
+                        {% for item in site.data.organisation-info.sections %}
                         <li><a href="#{{item.anchor}}">{{item.id}}. {{item.header}}</a></li>
                         {% endfor %}
                     </ul>
@@ -39,11 +39,11 @@ title: Сведения об организации
                             </p>
                         </div>
                     </div>
-                    {% for item in site.data.organisation-info%}
+                    {% for item in site.data.organisation-info.sections %}
                     <div class="info-section__general" id="{{item.anchor}}">
                         <h3 class="info-section__card-title default-card-title">{{item.id}}. {{item.header}}</h3>
                         <div class="default-paragraph">
-                            {% for paragraph in item.paragraphs%}
+                            {% for paragraph in item.paragraphs %}
                                 {% if paragraph.text != "" %}
                                     {% if paragraph.link != "" %}
                                         <p class="info-paragraph">
@@ -58,7 +58,7 @@ title: Сведения об организации
                             {% endfor %}
                         </div>
                         <ul class="info-section__list default-info-list">
-                            {% for listItem in item.list%}
+                            {% for listItem in item.list %}
                                     {% if listItem.fileName != "" and listItem.name != "" %}
                                         <li>
                                             {{listItem.name}}: <a href="{{listItem.file}}" target="_blank">{{listItem.fileName}}</a>
