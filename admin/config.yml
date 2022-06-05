@@ -103,3 +103,36 @@ collections:
                   - {label: "Дата", name: "date", widget: "date", default: " ", format: 'MMM Do YY' }
                   - {label: "Название документа", name: "title", widget: "string"}
                   - {label: "Документ", name: "url", widget: "file"}
+      - label: "Об организации"
+        name: "sections"
+        file: "_data/organisation-info.yml"
+        fields:
+          - label: "Блоки документов"
+            name: "sections"
+            allow_add: true
+            add_to_top: true
+            widget: "list"
+            fields:
+              - label: "Название блока документов"
+                name: "header"
+                widget: "string"
+              - label: "Якорь"
+                name: "anchor"
+                widget: "string"
+              - label: "Абзацы"
+                name: "paragraphs"
+                allow_add: true
+                add_to_top: true
+                widget: "list"
+                fields:
+                  - {label: "Текст", name: "text", widget: "text"}
+                  - {label: "Ссылка", name: "link", default: "", widget: "string"}
+                  - {label: "Название ссылки", name: "linkName", default: "", widget: "string"}
+              - label: "Список файлов (Опционально)"
+                name: "list"
+                allow_add: true
+                add_to_top: true
+                widget: "list"
+                fields:
+                  - {label: "Имя файла", name: "name", default: "", widget: "string"}
+                  - {label: "Файл", name: "file", default: "", widget: "file"}
