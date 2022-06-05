@@ -9,15 +9,15 @@ title: Методические материалы
                     <h2 class="info-section__title default-section-title">Методические материалы</h2>
                     <h3 class="info-section__card-title default-card-title">Нвигация по страцие</h3>
                     <ul class="info-section__navbar">
-                        {% for item in site.data.matireals.sections %}
+                        {% for item in site.data.materials.sections %}
                         <li><a href="#{{item.anchor}}">{{item.id}}. {{item.header}}</a></li>
                         {% endfor %}
                     </ul>
-                    {% for item in site.data.matireals.sections %}
+                    {% for item in site.data.materials.sections %}
                     <div class="info-section__document-block" id="{{item.anchor}}">
                         <h3 class="info-section__card-title default-card-title">{{item.id}}.{{item.header}}</h3>
                         <ul class="info-section__doc-list default-info-list">
-                            {% for doc in item.matireals %}
+                            {% for doc in item.materials %}
                                 {% if doc.date != "" %}
                                     <li> {{doc.date}} <br> <a href="{{doc.url}}">{{doc.title}}</a></li>
                                 {% else %}
