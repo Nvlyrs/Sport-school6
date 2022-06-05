@@ -38,7 +38,7 @@ collections:
             fields:
               - {label: "Имя", name: "name", widget: "string"}
               - {label: "О сотруднике", name: "disc", widget: "text"}
-              - {label: "Картинка", name: "img", widget: "image"}
+              - {label: "Картинка", name: "img", allow_multiple: falgse, widget: "image"}
               - label: "Виды спорта"
                 name: "kind-of-sports"
                 allow_add: true
@@ -46,11 +46,29 @@ collections:
                 max: 6
                 widget: "list"
                 fields:
-                  label: "Название вида спорта" 
-                  name: "label" 
+                  - label: "Название вида спорта" 
+                    name: "label" 
       - label: "Изменить контактные данные"
         name: "contact-info"
         file: "_data/contact-info.yml"
         fields:
           - {label: "E-mail", name: "e-mail", widget: "string"}
           - {label: "Телефон", name: "tel", widget: "string"}
+      - label: "Загрузить/изменить документы"
+        name: "documents"
+        file: "_data/documents.yml"
+        fields:
+          - label: "Загрузить/изменить документы"
+            name: "sections"
+            allow_add: true
+            add_to_top: true
+            widget: "list"
+            fields:
+              - label: "Блок"
+                name: "header"
+                allow_add: true
+                add_to_top: true
+                widget: "list"
+                fields:
+                  - {label: "Название документа", name: "title", widget: "string"}
+                  - {label: "Документ", name: "url", widget: "file"}
