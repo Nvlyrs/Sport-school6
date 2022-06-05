@@ -76,8 +76,8 @@ collections:
                   - {label: "Название документа", name: "title", widget: "string"}
                   - {label: "Документ", name: "url", widget: "file"}
       - label: "Методические материалы"
-        name: "matireals"
-        file: "_data/matireals.yml"
+        name: "materials"
+        file: "_data/materials.yml"
         fields:
           - label: "Блоки документов"
             name: "sections"
@@ -95,7 +95,7 @@ collections:
                 name: "anchor"
                 widget: "string"
               - label: "Документы"
-                name: "matireals"
+                name: "materials"
                 allow_add: true
                 add_to_top: true
                 widget: "list"
