@@ -75,3 +75,28 @@ collections:
                 fields:
                   - {label: "Название документа", name: "title", widget: "string"}
                   - {label: "Документ", name: "url", widget: "file"}
+      - label: "Методические материалы"
+        name: "sections"
+        file: "_data/matireals.yml"
+        fields:
+          - label: "Блоки документов"
+            name: "sections"
+            allow_add: true
+            add_to_top: true
+            widget: "list"
+            fields:
+              - label: "Название блока документов"
+                name: "header"
+                widget: "string"
+              - label: "Якорь"
+                name: "anchor"
+                widget: "string"
+              - label: "Документы"
+                name: "matireals"
+                allow_add: true
+                add_to_top: true
+                widget: "list"
+                fields:
+                  - {label: "Дата", name: "date", widget: "date", default: " ", format: 'MMM Do YY' }
+                  - {label: "Название документа", name: "title", widget: "string"}
+                  - {label: "Документ", name: "url", widget: "file"}
