@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: 'assets/uploads'
@@ -8,7 +9,7 @@ collections:
   - name: 'website-settings'
     label: 'Настройки'
     files:
-      - label: "Добавить новость"
+      - label: "Новости"
         name: "news"
         file: "_data/news.yml"
         fields:
@@ -23,3 +24,33 @@ collections:
               - {label: "Заголовок новости", name: "header", widget: "string"}
               - {label: "Описание", name: "disc", widget: "text"}
               - {label: "Картинка", name: "img", widget: "image"}
+      - label: "Сотрудники"
+        name: "instructors"
+        file: "_data/instructors.yml"
+        fields:
+          - label: "Сотрудники"
+            name: "instructors"
+            allow_add: true
+            add_to_top: true
+            max: 15
+            min: 1
+            widget: "list"
+            fields:
+              - {label: "Имя", name: "name", widget: "string"}
+              - {label: "О сотруднике", name: "disc", widget: "text"}
+              - {label: "Картинка", name: "img", widget: "image"}
+              - label: "Виды спорта"
+                name: "kind-of-sports"
+                allow_add: true
+                add_to_top: true
+                max: 6
+                widget: "list"
+                fields:
+                  label: "Название вида спорта" 
+                  name: "label" 
+      - label: "Изменить контактные данные"
+        name: "contact-info"
+        file: "_data/contact-info.yml"
+        fields:
+          - {label: "E-mail", name: "e-mail", widget: "string"}
+          - {label: "Телефон", name: "tel", widget: "string"}

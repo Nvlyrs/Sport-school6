@@ -24,9 +24,9 @@ title: Сведения об организации
                         <div class="info-section__main default-paragraph">
                             <p class="info-paragraph">
                                 <span>Юридический и фактический адреса: <br> </span>
-                                <span>Контактный телефон: <a href="tel: +78442621730">+7(8442)62-17-30</a> <br> </span>
+                                <span>Контактный телефон: <a href="tel: {{site.data.contact-info.tel}}">{{site.data.contact-info.tel}}</a> <br> </span>
                                 <span>Адресс электронной почты: <a
-                                        href="mailto: MOUDUSSH.6@yandex.ru">MOUDUSSH.6@yandex.ru</a></span>
+                                        href="mailto: {{site.data.contact-info.e-mail}}">{{site.data.contact-info.e-mail}}</a></span>
                             </p>
                             <p class="info-paragraph">
                                 <span>Режим и график работы:</span>

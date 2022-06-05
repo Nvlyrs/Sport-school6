@@ -60,6 +60,7 @@ content: materials-content
                     <h2 class="coaches-section__title default-section-title">Сотрудники</h2>
                     <div class="swiper">
                         <div class="swiper-wrapper">
+                        {% for item in site.data.instructors.instructors %}
                             <div class="swiper-slide">
                                 <div class="coaches-section__coach-card coach-card flex">
                                     <div class="coaches-section__kinds-of-sports coach-card__kinds-of-sports">
@@ -69,41 +70,25 @@ content: materials-content
                                         </h3>
                                         <ul
                                             class="coaches-section__kinds-of-sports-list coach-card__kinds-of-sports-list default-paragraph">
-                                            <li
-                                                class="coaches-section__kinds-of-sports-list-item coach-card__kinds-of-sports-list-item">
-                                                &mdash; Спортивная гимнастика</li>
-                                            <li
-                                                class="coaches-section__kinds-of-sports-list-item coach-card__kinds-of-sports-list-item">
-                                                &mdash; Спортивная акробатика</li>
-                                            <li
-                                                class="coaches-section__kinds-of-sports-list-item coach-card__kinds-of-sports-list-item">
-                                                &mdash; Художественная гимнастика</li>
+                                            {% for li in item.kind-of-sports %}
+                                                <li class="coaches-section__kinds-of-sports-list-item coach-card__kinds-of-sports-list-item">
+                                                    &mdash; {{li.label}}</li>
+                                            {% endfor %}
                                         </ul>
                                     </div>
                                     <div class="coaches-section__text-body coach-card__text-body flex">
                                         <h3 class="coaches-section__card-title coach-card__title default-card-title">
-                                            Тимофеев
-                                            Михаил
-                                            Юрьевич</h3>
+                                            {{item.name}}</h3>
                                         <p
                                             class="coaches-section__card-description coach-card__description default-paragraph">
-                                            Тренер по спортивной гимнастике. «Мастер спорта России» по спортивной
-                                            гимнастике.
-                                            Высшая
-                                            квалификационная категория. Кандидат педагогических наук. Окончил
-                                            Волгоградскую
-                                            государственную академию физической культуры в 2006 году. Присуждена
-                                            квалификация
-                                            специалист по физической культуре и спорту по специальности «физическая
-                                            культура
-                                            и
-                                            спорт». Стаж работы по специальности 13 лет.</p>
+                                            {{item.disc}}</p>
                                     </div>
-                                    <img src="../assets/img/coaches/coach-id1.png" alt="фото_тренера"
+                                    <img src="{{item.img}}" alt="фото_тренера"
                                         class="coaches-section__card-image coach-card__image">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            {% endfor %}
+                            <!-- <div class="swiper-slide">
                                 <div class="coaches-section__coach-card coach-card flex">
                                     <div class="coaches-section__kinds-of-sports coach-card__kinds-of-sports">
                                         <h3 class="coaches-section__card-title coach-card__title default-card-title">
@@ -145,7 +130,7 @@ content: materials-content
                                     <img src="../assets/img/coaches/coach-id1.png" alt="фото_тренера"
                                         class="coaches-section__card-image coach-card__image">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-prev"></div>
@@ -166,7 +151,7 @@ content: materials-content
                         </div>
                         <div class="contacts-section__email flex">
                             <img src="../assets/img/contacts-section/mail.png" alt="">
-                            <p class="contacts-section__paragraph default-paragraph">Email: <br> moudussh.6@yandex.ru
+                            <p class="contacts-section__paragraph default-paragraph">Email: <br> {{site.data.contact-info.e-mail}}
                             </p>
                         </div>
                     </div>
