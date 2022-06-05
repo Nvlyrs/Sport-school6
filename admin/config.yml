@@ -59,13 +59,16 @@ collections:
         file: "_data/documents.yml"
         fields:
           - label: "Загрузить/изменить документы"
-            name: "documents"
+            name: "sections"
             allow_add: true
             add_to_top: true
             widget: "list"
             fields:
-              - label: "Блок"
+              - label: "Название блока документов"
                 name: "header"
+                widget: "string"
+              - label: "Блок"
+                name: "documents"
                 allow_add: true
                 add_to_top: true
                 widget: "list"
