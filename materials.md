@@ -9,43 +9,24 @@ title: Методические материалы
                     <h2 class="info-section__title default-section-title">Методические материалы</h2>
                     <h3 class="info-section__card-title default-card-title">Нвигация по страцие</h3>
                     <ul class="info-section__navbar">
-                        {% for item in site.data.organisation-info%}
-                        <li><a href="#actual">{{item.id}}. {{item.header}}</a></li>
+                        {% for item in site.data.matireals.sections %}
+                        <li><a href="#{{item.anchor}}">{{item.id}}. {{item.header}}</a></li>
                         {% endfor %}
-                        <li><a href="#corruption">2.Противодействие коррупции</a></li>
                     </ul>
-                    <div class="info-section__actual" id="actual">
-                        <h3 class="info-section__card-title default-card-title">1.Последние методические материалы</h3>
-                        <div class="info-section__main default-paragraph">
-                            <p>
-                                30 декабря 2021 г. <br> <a href="">Программа спортивной подготовки по художественной
-                                    гимнастике</a>;
-                            </p>
-                            <p>
-                                30 декабря 2021 г. <br> <a href="">Программа спортивной подготовки по спортивной
-                                    акробатике</a>;
-                            </p>
-                            <p>
-                                30 декабря 2021 г. <br> <a href="">Программа спортивной подготовки по спортивной
-                                    гимнастике</a>;
-                            </p>
-                            <p>
-                                15 сентября 2017 г. <br> <a href="">Рабочая образовательная программа по спортивной
-                                    гимнастике для юношей</a>;
-                            </p>
-                            <p>
-                                31 августа 2016 г. <br> <a href="">Подготовительные упражнения для мальчиков младшего возраста в
-                                спортивной гимнастике на отдельных видах многоборья (опорный прыжок и перекладина)</a>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="info-section__corruption" id="corruption">
-                        <h3 class="info-section__card-title default-card-title">2.Противодействие коррупции</h3>
-                        <ul class="default-info-list">
-                            <li>&mdash; <a href="">Положение о противодействии коррупции положение; </a> </li>
-                            <li>&mdash; <a href="">Положение антикоррупционной политики. </a></li>
+                    {% for item in site.data.matireals.sections %}
+                    <div class="info-section__document-block" id="{{item.anchor}}">
+                        <h3 class="info-section__card-title default-card-title">{{item.id}}.{{item.header}}</h3>
+                        <ul class="info-section__doc-list default-info-list">
+                            {% for doc in item.matireals %}
+                                {% if doc.date != "" %}
+                                    <li> {{doc.date}} <br> <a href="{{doc.url}}">{{doc.title}}</a></li>
+                                {% else %}
+                                    <li><a href="{{doc.url}}">{{doc.title}}</a></li>
+                                {% endif %}
+                            {% endfor %}
                         </ul>
                     </div>
+                    {% endfor %}
                 </div>
             </section>
         </main>
