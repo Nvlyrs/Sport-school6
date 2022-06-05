@@ -46,8 +46,8 @@ collections:
                 max: 6
                 widget: "list"
                 fields:
-                  label: "Название вида спорта" 
-                  name: "label" 
+                  - label: "Название вида спорта" 
+                    name: "label" 
       - label: "Изменить контактные данные"
         name: "contact-info"
         file: "_data/contact-info.yml"
