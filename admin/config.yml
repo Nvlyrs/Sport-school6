@@ -55,7 +55,7 @@ collections:
           - {label: "E-mail", name: "e-mail", widget: "string"}
           - {label: "Телефон", name: "tel", widget: "string"}
       - label: "Загрузить/изменить документы"
-        name: "documents"
+        name: "sections"
         file: "_data/documents.yml"
         fields:
           - label: "Загрузить/изменить документы"
