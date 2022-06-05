@@ -38,7 +38,7 @@ collections:
             fields:
               - {label: "Имя", name: "name", widget: "string"}
               - {label: "О сотруднике", name: "disc", widget: "text"}
-              - {label: "Картинка", name: "img", allow_multiple: falgse, widget: "image"}
+              - {label: "Картинка", name: "img", allow_multiple: false, widget: "image"}
               - label: "Виды спорта"
                 name: "kind-of-sports"
                 allow_add: true
