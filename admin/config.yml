@@ -85,6 +85,9 @@ collections:
             add_to_top: true
             widget: "list"
             fields:
+              - label: "Id"
+                name: "id"
+                widget: "number"
               - label: "Название блока документов"
                 name: "header"
                 widget: "string"
