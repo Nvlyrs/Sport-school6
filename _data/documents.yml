@@ -1,8 +1,4 @@
 sections:
-  - header: Новый блок документов
-    documents:
-      - title: Название документа
-        url: /assets/uploads/pexels-eberhard-grossgasteiger-572897.jpg
   - header: Устав образовательной организации
     documents:
       - title: устав 2016 новый.PDF
